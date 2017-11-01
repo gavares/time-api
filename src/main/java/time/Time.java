@@ -9,13 +9,12 @@ public class Time {
     private final String time;
 
     public Time() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm z");
+        DateFormat dateFormat = new SimpleDateFormat("yy/MM/dd HH:mm z");
         Date date = new Date();
         this.time = dateFormat.format(date);
     }
 
     public String getTime(){
-        return this.time;
-
+      return this.time;
     }
 }
